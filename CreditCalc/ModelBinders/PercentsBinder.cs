@@ -39,7 +39,7 @@ namespace CreditCalc.ModelBinders
                 val = val.Remove(val.Length - 1);
 
             //Parse value
-            if (!double.TryParse(val, NumberStyles.Any, CultureInfo.InvariantCulture, out double parsed))
+            if (!double.TryParse(val.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out double parsed))
             {
                 bindingContext.ModelState.TryAddModelError(modelName,
                     "Percents must be a float value with or without '%' symbol at the end.");

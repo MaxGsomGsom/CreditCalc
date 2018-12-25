@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CreditCalc
+namespace CreditCalc.Models
 {
     /// <summary>
     /// Calculated credit payments

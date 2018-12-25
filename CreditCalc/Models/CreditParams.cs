@@ -7,7 +7,7 @@ using CreditCalc.ModelBinders;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CreditCalc
+namespace CreditCalc.Models
 {
     /// <summary>
     /// Basic parameters of credit

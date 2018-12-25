@@ -19,6 +19,7 @@ namespace CreditCalc.JsonConverters
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
+            if (writer == null) throw new ArgumentNullException();
             if (!(value is double)) throw new InvalidCastException();
             writer.WriteRawValue(((double)value).ToString("F2", CultureInfo.InvariantCulture));
         }
