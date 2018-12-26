@@ -6,7 +6,7 @@ using CreditCalc.JsonConverters;
 using Newtonsoft.Json;
 using System.IO;
 
-namespace UnitTests
+namespace CreditCalc.UnitTests
 {
     public class MoneyJsonConverterTests
     {

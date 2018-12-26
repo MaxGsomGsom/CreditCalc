@@ -7,7 +7,7 @@ using CreditCalc.ModelBinders;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Moq;
 
-namespace UnitTests
+namespace CreditCalc.UnitTests
 {
     public class PercentsBinderTests
     {
@@ -36,7 +36,7 @@ namespace UnitTests
             binder.BindModelAsync(mock.Object);
 
             Assert.True(mock.Object.ModelState[modelName].RawValue as string == val);
-            Assert.Equal((double)mock.Object.Result.Model, expected);
+            Assert.Equal(expected, (double)mock.Object.Result.Model);
         }
 
         [Fact]
@@ -50,7 +50,7 @@ namespace UnitTests
             binder.BindModelAsync(mock.Object);
 
             Assert.True(mock.Object.ModelState[modelName].RawValue as string == val);
-            Assert.Equal((double)mock.Object.Result.Model, expected);
+            Assert.Equal(expected, (double)mock.Object.Result.Model);
         }
 
         [Fact]
@@ -64,11 +64,11 @@ namespace UnitTests
             binder.BindModelAsync(mock.Object);
 
             Assert.True(mock.Object.ModelState[modelName].RawValue as string == val);
-            Assert.Equal((double)mock.Object.Result.Model, expected);
+            Assert.Equal(expected, (double)mock.Object.Result.Model);
         }
 
         [Fact]
-        public void BindWrongString()
+        public void BindIncorrectString()
         {
             var modelName = "TestModel";
             var val = "2wqe3,2";

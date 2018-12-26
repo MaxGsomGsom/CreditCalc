@@ -7,6 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditCalc", "CreditCalc\Cr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{00407B9C-B22F-44D1-81FB-70C22B97075E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntergrationTests", "IntergrationTests\IntergrationTests.csproj", "{CC8447FF-78AE-4366-9B13-82694D973579}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D03ED9E9-C21C-4A1A-8C94-5BBE6205A5AE} = {D03ED9E9-C21C-4A1A-8C94-5BBE6205A5AE}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +26,10 @@ Global
 		{00407B9C-B22F-44D1-81FB-70C22B97075E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00407B9C-B22F-44D1-81FB-70C22B97075E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00407B9C-B22F-44D1-81FB-70C22B97075E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC8447FF-78AE-4366-9B13-82694D973579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC8447FF-78AE-4366-9B13-82694D973579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC8447FF-78AE-4366-9B13-82694D973579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC8447FF-78AE-4366-9B13-82694D973579}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
