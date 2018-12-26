@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/MaxGsomGsom/CreditCalc.svg?branch=master)](https://travis-ci.org/MaxGsomGsom/CreditCalc)
